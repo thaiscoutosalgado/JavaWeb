@@ -1,0 +1,41 @@
+<!DOCTYPE >
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http:www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<title>Login</title>
+</head>
+<body>
+
+	<div class="container" style="height: 100vh">
+		<div class="row d-flex justify-contnt-center aling-items-center">
+			<form class="form-horizontal border rounded p-4"
+				 th:action="@{/signin}" method="post"
+				style="margin: 10ox">
+				<h2 class="text-center">Login</h2>
+				<div class="form-group">
+					<fieldset>
+						<div class="form-group">
+						<label for="textUsername">UserName</label>
+						 <input class="form-control" id="textUsername" type="text" name="textUsername">
+						 <label for="textPassword">Password</label>
+						 <input class="form-control" type="text" th:field="*{email}">
+						</div>					
+					</fieldset>
+				</div>
+				<div align="center">
+				<a class="btn btn-sm btn-default">Cancelar </a>
+				<button type="submit" class="btn btn-sm btn-primary">Logar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

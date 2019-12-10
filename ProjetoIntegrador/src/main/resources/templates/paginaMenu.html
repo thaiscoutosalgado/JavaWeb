@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http:www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+</head>
+<body style="height: 100vh;">
+
+	<div class="h-100 d-flex justify-content-center aling-items-center">
+		<div class="col text-center jumbotron" style="background-color: #f48fb1">
+		<h2 class="text-center mb-5 display-2">Menu do Sistema</h2>
+		<a class="btn btn-lg btn-primary pr-5 pl-5 mr-5" th:href= "@{/listarAluno}">Listar Aluno</a>
+		<a class="btn btn-lg btn-primary pr-5 pl-5 mr-5" th:href= "@{/listarCarro}">Listar Carro</a>
+		</div>
+	</div>
+</body>
+</html>
